@@ -1,0 +1,17 @@
+.footer{
+    grid-area: 'footer';
+    padding:10px;
+    width:100%;
+    height:auto;
+    margin-bottom:10px;
+    background-color:#c2ddc4;;
+
+}
+
+.footerimg{
+ margin-left:450px;
+}
+
+.fi{
+    margin:10px;
+}
