@@ -487,7 +487,6 @@ export default function Content2() {
   <div className={styles.block}>
     <h3>合利他命EX Plus</h3>
     <img className={styles.img} src="images/jm1.jpg" alt="jm1" />
-    <p>hhhh</p>
   </div>
   
   <div className={styles.block}>
