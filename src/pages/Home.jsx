@@ -4,10 +4,11 @@ import Footer from "../compenents/footer"
 import Slider from "react-slick";
 
 
+
 function Home() {
     return (
-      <div className="container main-layout">
-        <Header className="layout-header"/>
+      <div className="container">
+        <Header/>
         <Content/>
         <Footer/>
       </div>

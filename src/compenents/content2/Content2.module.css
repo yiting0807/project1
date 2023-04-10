@@ -1,0 +1,82 @@
+.container{
+    grid-area: 'content'; 
+    padding:0;
+    width:100%;
+    height:6000px;
+    margin:0px;
+    margin-top:-20px;
+    /* display:flex; */
+    background-color:#f9f190;
+    }
+    
+    .row{
+     display: flexbox;
+     flex-wrap: wrap;
+    }
+    
+    .title{
+        text-align: center;
+        margin:0 auto; 
+        /* width:500px; */
+        background-color: #f7adad;
+    }
+    
+    .title2{
+        text-align: center;
+        margin-top:100px;
+        background-color: #f7adad;
+    }
+    
+    
+    
+    .food{
+       text-align: center;
+       padding-top: 50px;
+    }
+    .slick-dots li.slick-active button:before{
+        color:rgb(194, 221,196 ) !important;
+    }
+    
+    .block{
+        text-align: center;
+    }
+    
+    .img{
+        width:200px;
+        height:200px;
+        margin:0 auto;
+        
+    }
+    
+    .img:hover{
+        cursor: pointer;
+    } 
+    
+    .clothes{
+        margin-top: 200px;
+        text-align: center;
+    }
+    
+    .idol{
+        margin-top: 200px;
+        text-align: center;
+    }
+    
+    .makeup{
+        margin-top: 200px;
+        text-align: center;
+    }
+    
+    /*numbutton*/
+    
+    
+    @media (max-width: 576px) {
+        .title {
+          width:300px;
+        }
+        .img{
+          width:150px;
+          height:150px;
+          margin:0 auto;
+        }
+    }

@@ -3,8 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import styles from "./Content.module.css"
-
-
+import {
+  Link
+} from 'react-router-dom' 
 
 
 export default function Content() {
@@ -20,27 +21,36 @@ export default function Content() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           infinite: true,
           dots: true
         }
       },
-      {
-        breakpoint: 446,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
+      // {
+      //   breakpoint: 568,
+      //   settings: {
+      //     slidesToShow: 2,
+      //     slidesToScroll: 2,
+      //     initialSlide: 2
+      //   }
+
+      // },
+      // {
+      //   breakpoint: 446,
+      //   settings: {
+      //     slidesToShow: 2,
+      //     slidesToScroll: 2,
+      //     initialSlide: 2
+      //   }
+      // },
+      // {
+      //   breakpoint: 480,
+      //   settings: {
+      //     slidesToShow: 1,
+      //     slidesToScroll: 1
+      //   }
+      // }
     ]
   };
   
@@ -54,49 +64,48 @@ export default function Content() {
           <h2 className={styles.food} id="food">Food</h2>
 
           <div className={styles.title}>
-            <h1>最新商品</h1>
+          <h1>最新商品</h1>
           </div>
 
           
           <Slider {...settings}>
           <div className={styles.block}>
-            <h5>ORION  預感香烤洋芋片 </h5>
+            <h3>ORION  預感香烤洋芋片 </h3>
             <img className={styles.img} src="images/kf1.png" alt="kf1" />
-            <p>hhhh</p>
+            <Link to='/cart'><button>add in cart</button></Link>
           </div>
-
           <div className={styles.block}>
-            <h5>CW 巧克力夾心餅 5入</h5>
+            <h3>CW 巧克力夾心餅 5入</h3>
             <img className={styles.img} src="images/kf2.png" alt="kf2" />
           </div>
 
           <div className={styles.block}>
-            <h5>Orion 烏龜玉米脆片 </h5>
+            <h3>Orion 烏龜玉米脆片 </h3>
             <img className={styles.img} src="images/kf3.png" alt="kf3" />
           </div>
 
           <div className={styles.block}>
-            <h5>Orion  香炒醬料風味鯨魚餅乾</h5>
+            <h3>Orion  香炒醬料風味鯨魚餅乾</h3>
             <img className={styles.img} src="images/kf4.png" alt="kf4" />
           </div>
 
           <div className={styles.block}>
-            <h3>5</h3>
+            <h3>OrionSun波浪脆餅 大蒜麵包風味</h3>
             <img className={styles.img} src="images/kf5.png" alt="kf5" />
           </div>
 
           <div className={styles.block}>
-            <h3>6</h3>
+            <h3>CROWN 皇冠 鮮奶油鬆餅</h3>
             <img className={styles.img} src="images/kf6.png" alt="kf6"/>
           </div>
 
           <div className={styles.block}>
-            <h3>7</h3>
+            <h3>Orion草莓奶油派</h3>
             <img className={styles.img} src="images/kf7.png" alt="kf7"/>
           </div>
 
           <div className={styles.block}>
-            <h3>8</h3>
+            <h3>Ohs 海苔糯米餅乾</h3>
             <img className={styles.img} src="images/kf8.png" alt="kf8"/>
           </div>
 
@@ -110,42 +119,42 @@ export default function Content() {
 
          <Slider {...settings}>
           <div className={styles.block}>
-            <h3>2-1</h3>
+            <h3>Orion辣味陽光波浪玉米脆片</h3>
             <img className={styles.img} src="images/kf2-1.png" alt="kf2-1" />
           </div>
 
           <div className={styles.block}>
-            <h3>2</h3>
+            <h3>Crown白巧克力夾心威化酥</h3>
             <img className={styles.img} src="images/kf2-2.png" alt="kf2-2" />
           </div>
 
           <div className={styles.block}>
-            <h3>3</h3>
+            <h3>Nongshim玉米造型玉米餅乾</h3>
             <img className={styles.img} src="images/kf2-3.png" alt="kf2-3" />
           </div>
 
           <div className={styles.block}>
-            <h3>4</h3>
+            <h3>Earnest F&B Pororo迷你藥果</h3>
             <img className={styles.img} src="images/kf2-4.png" alt="kf2-4" />
           </div>
 
           <div className={styles.block}>
-            <h3>5</h3>
+            <h3>OSULLOC 優質綠茶華夫餅</h3>
             <img className={styles.img} src="images/kf2-5.png" alt="kf2-5" />
           </div>
 
           <div className={styles.block}>
-            <h3>6</h3>
+            <h3>Nongshim黑松露蝦餅</h3>
             <img className={styles.img} src="images/kf2-6.png" alt="kf2-6"/>
           </div>
 
           <div className={styles.block}>
-            <h3>7</h3>
+            <h3>DAY& 綜合水果蒟蒻果凍飲組 </h3>
             <img className={styles.img} src="images/kf2-7.png" alt="kf2-7"/>
           </div>
 
           <div className={styles.block}>
-            <h3>8</h3>
+            <h3>HAITAI脆皮迷你黑森林蛋糕</h3>
             <img className={styles.img} src="images/kf2-8.png" alt="kf2-8"/>
           </div>
 
@@ -157,42 +166,42 @@ export default function Content() {
 
          <Slider {...settings}>
           <div className={styles.block}>
-            <h3>1</h3>
+            <h3>Orion洋芋片</h3>
             <img className={styles.img} src="images/kf3-1.png" alt="kf3-1" />
           </div>
 
           <div className={styles.block}>
-            <h3>2</h3>
+            <h3>LOTTE堅果巧克力棒</h3>
             <img className={styles.img} src="images/kf3-2.png" alt="kf3-2" />
           </div>
 
           <div className={styles.block}>
-            <h3>3</h3>
+            <h3>HBAF 蜂蜜奶油味杏仁果</h3>
             <img className={styles.img} src="images/kf3-3.png" alt="kf3-3" />
           </div>
 
           <div className={styles.block}>
-            <h3>4</h3>
+            <h3>Nongshim 薯條餅乾</h3>
             <img className={styles.img} src="images/kf3-4.png" alt="kf3-4" />
           </div>
 
           <div className={styles.block}>
-            <h3>5</h3>
+            <h3>HAITAI新堂洞辣炒年糕餅乾</h3>
             <img className={styles.img} src="images/kf3-5.png" alt="kf3-5" />
           </div>
 
           <div className={styles.block}>
-            <h3>6</h3>
+            <h3>HBAF 杏仁果 奶油餅乾味</h3>
             <img className={styles.img} src="images/kf3-6.png" alt="kf3-6"/>
           </div>
 
           <div className={styles.block}>
-            <h3>7</h3>
+            <h3>LOTTE熔岩巧克力餅乾</h3>
             <img className={styles.img} src="images/kf3-7.png" alt="kf3-7"/>
           </div>
 
           <div className={styles.block}>
-            <h3>8</h3>
+            <h3>Orion巧克力蛋糕 </h3>
             <img className={styles.img} src="images/kf3-8.png" alt="kf3-8"/>
           </div>
 
@@ -208,43 +217,42 @@ export default function Content() {
 
 <Slider {...settings}>
 <div className={styles.block}>
-  <h5>ORION 好麗友 </h5>
+  <h3>heart rabbit短T </h3>
   <img className={styles.img} src="images/c1.png" alt="c1" />
-  <p>hhhh</p>
 </div>
 
 <div className={styles.block}>
-  <h5>CW 巧克力夾心餅 5入</h5>
+  <h3>拉鍊短領上衣</h3>
   <img className={styles.img} src="images/c2.png" alt="c2" />
 </div>
 
 <div className={styles.block}>
-  <h5>Orion  烏龜玉米脆片 巧克力口味</h5>
+  <h3>BRL刺繡帽</h3>
   <img className={styles.img} src="images/c3.png" alt="c3" />
 </div>
 
 <div className={styles.block}>
-  <h5>Orion  香炒醬料風味鯨魚餅乾</h5>
+  <h3>慵懶工裝褲</h3>
   <img className={styles.img} src="images/c4.png" alt="c4" />
 </div>
 
 <div className={styles.block}>
-  <h3>5</h3>
+  <h3>假兩件上衣</h3>
   <img className={styles.img} src="images/c5.png" alt="c5" />
 </div>
 
 <div className={styles.block}>
-  <h3>6</h3>
+  <h3>灰色工裝褲</h3>
   <img className={styles.img} src="images/c6.png" alt="c6"/>
 </div>
 
 <div className={styles.block}>
-  <h3>7</h3>
+  <h3>牛仔五分褲</h3>
   <img className={styles.img} src="images/c7.png" alt="c7"/>
 </div>
 
 <div className={styles.block}>
-  <h3>8</h3>
+  <h3>個性無袖背心</h3>
   <img className={styles.img} src="images/c8.png" alt="c8"/>
 </div>
 
@@ -258,42 +266,42 @@ export default function Content() {
 
 <Slider {...settings}>
 <div className={styles.block}>
-  <h3>2-1</h3>
+  <h3>刺繡方領背心</h3>
   <img className={styles.img} src="images/c2-1.png" alt="c2-1" />
 </div>
 
 <div className={styles.block}>
-  <h3>2</h3>
+  <h3>可縮口休閒褲</h3>
   <img className={styles.img} src="images/c2-2.png" alt="c2-2" />
 </div>
 
 <div className={styles.block}>
-  <h3>3</h3>
+  <h3>棒球外套</h3>
   <img className={styles.img} src="images/c2-3.png" alt="c2-3" />
 </div>
 
 <div className={styles.block}>
-  <h3>4</h3>
+  <h3>針織短版背心</h3>
   <img className={styles.img} src="images/c2-4.png" alt="c2-4" />
 </div>
 
 <div className={styles.block}>
-  <h3>5</h3>
+  <h3>灰色假兩件上衣</h3>
   <img className={styles.img} src="images/c2-5.png" alt="c2-5" />
 </div>
 
 <div className={styles.block}>
-  <h3>6</h3>
+  <h3>黑色雲朵包</h3>
   <img className={styles.img} src="images/c2-6.png" alt="c2-6"/>
 </div>
 
 <div className={styles.block}>
-  <h3>7</h3>
+  <h3>social club粉色帽</h3>
   <img className={styles.img} src="images/c2-7.png" alt="c2-7"/>
 </div>
 
 <div className={styles.block}>
-  <h3>8</h3>
+  <h3>水藍針織罩衫</h3>
   <img className={styles.img} src="images/c2-8.png" alt="c2-8"/>
 </div>
 
@@ -305,12 +313,13 @@ export default function Content() {
 
 <Slider {...settings}>
 <div className={styles.block}>
-  <h3>1</h3>
+  <h3>Y2K愛心上衣</h3>
   <img className={styles.img} src="images/c3-1.png" alt="c3-1" />
 </div>
 
 <div className={styles.block}>
-  <h3>2</h3>
+  <h3>無拉鍊薄款外套
+  </h3>
   <img className={styles.img} src="images/c3-2.png" alt="c3-2" />
 </div>
 
@@ -356,23 +365,22 @@ export default function Content() {
 
 <Slider {...settings}>
 <div className={styles.block}>
-  <h5>ORION 好麗友 預感香烤洋芋片 非油炸</h5>
+  <h3>ORION 好麗友 預感香烤洋芋片 非油炸</h3>
   <img className={styles.img} src="images/i1.jpg" alt="i1" />
-  <p>hhhh</p>
 </div>
 
 <div className={styles.block}>
-  <h5>CW 巧克力夾心餅 5入</h5>
+  <h3>CW 巧克力夾心餅 5入</h3>
   <img className={styles.img} src="images/i2.png" alt="i2" />
 </div>
 
 <div className={styles.block}>
-  <h5>Orion  烏龜玉米脆片 巧克力口味</h5>
+  <h3>Orion  烏龜玉米脆片 巧克力口味</h3>
   <img className={styles.img} src="images/i3.png" alt="i3" />
 </div>
 
 <div className={styles.block}>
-  <h5>Orion  香炒醬料風味鯨魚餅乾</h5>
+  <h3>Orion  香炒醬料風味鯨魚餅乾</h3>
   <img className={styles.img} src="images/i4.png" alt="i4" />
 </div>
 
@@ -504,23 +512,23 @@ export default function Content() {
 
 <Slider {...settings}>
 <div className={styles.block}>
-  <h5>ORION 好麗友 預感香烤洋芋片 非油炸</h5>
+  <h3>ORION 好麗友 預感香烤洋芋片 非油炸</h3>
   <img className={styles.img} src="images/km1.jpeg" alt="km1" />
   <p>hhhh</p>
 </div>
 
 <div className={styles.block}>
-  <h5>CW 巧克力夾心餅 5入</h5>
+  <h3>CW 巧克力夾心餅 5入</h3>
   <img className={styles.img} src="images/km2.png" alt="km2" />
 </div>
 
 <div className={styles.block}>
-  <h5>Orion  烏龜玉米脆片 巧克力口味</h5>
+  <h3>Orion  烏龜玉米脆片 巧克力口味</h3>
   <img className={styles.img} src="images/km3.png" alt="km3" />
 </div>
 
 <div className={styles.block}>
-  <h5>Orion  香炒醬料風味鯨魚餅乾</h5>
+  <h3>Orion  香炒醬料風味鯨魚餅乾</h3>
   <img className={styles.img} src="images/km4.png" alt="km4" />
 </div>
 
@@ -644,13 +652,6 @@ export default function Content() {
 
 
 
-
-
-
-
-
-
-          
 
        </div>
  );

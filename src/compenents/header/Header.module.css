@@ -1,31 +1,41 @@
 .header{
-grid-area: 'header';
+/* grid-area: 'header'; */
 padding:10px;
 /* width:100%; */
-height:auto;
-margin-bottom:10px;
+height:100px;
+margin-bottom:-45px;
 background-color:#c2ddc4;
 position: sticky;
 top:0;
-z-index: 10;
+z-index: 30;
 }
 
+.slider{
+   height:500px;
+}
 
 .imgs{
     margin-left: 900px;
-    /* display: flex; */
+    margin-top:-70px;
+    /* margin-bottom: 200px; */
 }
 
 .ti{
+    width:30px; 
+    height:30px;
     margin:10px;
 }
 
 .top{
  text-align: center;
  background-color: #f7adad;
- height:900px;
+ height:1000px;
 }
 
+.toptitle{
+padding:15px;
+font-size: 65px;
+}
 
  .topimg{
 height:500px;
@@ -43,22 +53,23 @@ z-index: 1;
 
 .fourbt{
     display:flex;
-    margin-top: 100px;
-    margin-left:130px;
+    margin-top: 50px;
+    margin-left:140px;
    
 }
 
 .bt{
-    width:100px;
-    height:100px;
+    width:120px;
+    height:120px;
     background-color: #c2ddc4;
-    margin:60px;
+    margin:50px;
     border-style:groove;
     border-radius: 60px;
 }
 
 .btword{
     text-align: center;
+    font-size: 18px;
     height: 100px; 
     line-height: 100px;
 }
@@ -66,7 +77,6 @@ z-index: 1;
 .bt:hover{
     background-color: #f9f190;
     cursor: pointer; 
-    /* -webkit-filter:drop-shadow(10px 10px 10px #fff); */
     filter:drop-shadow(0px 0px 10px #fff);
     transform: scale(1.1);
 }
@@ -80,14 +90,67 @@ a:hover{
     color:#f7adad;
 }
 
+
+.menulogo{
+    width:90px;
+    height:90px;
+    margin-left:545px;
+    margin-top: 10px;
+}
 /* RWD */
-/* @media (min-width: 446px) {
-    .header {
-      background-color: #f7adad;
+@media (max-width: 576px) {
+    .header{
+        margin-bottom:-15px;
     }
+    .imgs{
+        margin-left:260px;
+        margin-top:-35px;
+    }
+    .ti{
+        width:10px; 
+        height:10px;
+        margin:2px;
+    }
+    .toptitle{
+        font-size: 20px;
+    }
+    .topimg{
+        height:500px;
+        padding-left:18px;
+        padding-top:10px;
+        }
     .cimg{
-        width:200px;
-        height:100px;
+        width:300px;
+        height:250px;
+    }
+    .top{
+        height:550px;
+    } 
+     .bt{
+        width:58px;
+        height:50px;
+        margin:9px;
+        border-radius: 60px;
+        z-index:20;
     }
     
-  }  */
+    .btword{
+        font-size: 0.0001cm;
+        line-height: 50px;
+    }
+    .fourbt{
+        margin-left:16px;
+       
+    }
+    .slider{
+        height:300px;
+     }
+     .menulogo{
+        width:50px;
+        height:50px;
+        margin-left:140px;
+        margin-top: 20px;
+    }
+    
+    
+  } 

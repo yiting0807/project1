@@ -14,7 +14,17 @@ export default function Header() {
     slidesToScroll: 1, // 按下一頁的時候，要跑幾張
     autoplay:true,
     autospeed:500,
+
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+        dots: false,
+        }
+      }
+    ]
   }
+
 
 
 
@@ -22,8 +32,14 @@ export default function Header() {
       <div>
 
         <div className={styles.header} >
+          
+              <img className={styles.menulogo} src="images/menulogo.png" alt="logo"/>
+        
+            
             <div className={styles.imgs}>
-              <img className={styles.ti} src="images/glass.png" alt="glass" width="30px" height="30px"/>
+              
+          
+              <img className={styles.ti} src="images/glass.png" alt="glass" />
               <img className={styles.ti} src="images/translate.png" alt="translate" width="30px" height="30px"/>
               <img className={styles.ti} src="images/login.png" alt="login" width="30px" height="30px"/>
               <img className={styles.ti} src="images/cart.png" alt="cart" width="30px" height="30px"/>
@@ -32,6 +48,8 @@ export default function Header() {
 
         <div className={styles.top}>
             <h1 className={styles.toptitle}>每週熱銷商品</h1>
+          
+          <div className={styles.slider}>
           <Slider {...settings}>
              <div className={styles.topimg}>
                <img className={styles.cimg} src="images/oioi.png" alt="oioi"  />
@@ -43,8 +61,10 @@ export default function Header() {
 
               <div className={styles.topimg}>
                <img className={styles.cimg} src="images/cookie.jpg" alt="cookie"/>
-              </div>   
+              </div>    
           </Slider>
+         </div>
+
         <div className={styles.fourbt}>
           <div className={styles.bt}>
                {/* <Button type="text" shape="default" size="large">FOOD</Button> */}
@@ -76,8 +96,8 @@ export default function Header() {
         
              
           
-     </div>
-       
+     
+        </div>
           
     );
 

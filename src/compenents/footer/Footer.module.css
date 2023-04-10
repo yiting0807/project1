@@ -1,7 +1,7 @@
 .footer{
     grid-area: 'footer';
     padding:10px;
-    width:100%;
+    /* width:100%; */
     height:auto;
     margin-bottom:10px;
     background-color:#c2ddc4;;
@@ -9,9 +9,25 @@
 }
 
 .footerimg{
- margin-left:450px;
+    
+    margin-left:450px;
 }
 
 .fi{
+    width:30px; 
+    height:30px;
     margin:10px;
+}
+
+@media (max-width: 576px) {
+    .fi{
+        width:15px; 
+        height:15px;
+        margin:5px;
+        
+    }
+    .footerimg{
+        
+        margin-left:118px;
+    }
 }

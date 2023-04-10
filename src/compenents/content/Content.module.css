@@ -4,6 +4,7 @@ padding:0;
 width:100%;
 height:6000px;
 margin:0px;
+margin-top:-20px;
 /* display:flex; */
 background-color:#f9f190;
 }
@@ -15,19 +16,22 @@ background-color:#f9f190;
 
 .title{
     text-align: center;
-    margin:0 auto;
-    width:500px;
+    margin:0 auto; 
+    /* width:500px; */
+    background-color: #f7adad;
 }
 
 .title2{
     text-align: center;
     margin-top:100px;
+    background-color: #f7adad;
 }
 
 
 
 .food{
    text-align: center;
+   padding-top: 50px;
 }
 .slick-dots li.slick-active button:before{
     color:rgb(194, 221,196 ) !important;
@@ -63,3 +67,16 @@ background-color:#f9f190;
     text-align: center;
 }
 
+/*numbutton*/
+
+
+@media (max-width: 576px) {
+    .title {
+      width:300px;
+    }
+    .img{
+      width:150px;
+      height:150px;
+      margin:0 auto;
+    }
+}
